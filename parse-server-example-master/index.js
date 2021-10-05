@@ -34,7 +34,7 @@ var api = new ParseServer({
 
 var dashboard = new ParseDashboard({
     "apps": [{
-        "serverURL": 'mongodb://localhost:27017/dev',
+        "serverURL": SERVER_URL,
         "appId": APP_ID,
         "masterKey": MASTER_KEY,
         "appName": "ParseApp2021"
