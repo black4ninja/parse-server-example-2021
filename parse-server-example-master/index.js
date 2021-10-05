@@ -10,8 +10,6 @@ const path = require('path');
 const args = process.argv || [];
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-databaseUri = "mongodb://meeplab:4BPNSdISUd5u1K29@cluster0-shard-00-00-pxvyx.mongodb.net:27017,cluster0-shard-00-01-pxvyx.mongodb.net:27017,cluster0-shard-00-02-pxvyx.mongodb.net:27017/ParseApp2021DEV?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
-
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }else{
