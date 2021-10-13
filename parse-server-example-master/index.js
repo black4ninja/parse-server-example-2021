@@ -21,7 +21,7 @@ var MASTER_KEY = ""
 var SERVER_URL = "http://localhost:1337/parse"
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://meeplab:4BPNSdISUd5u1K29@cluster0-shard-00-00-pxvyx.mongodb.net:27017,cluster0-shard-00-01-pxvyx.mongodb.net:27017,cluster0-shard-00-02-pxvyx.mongodb.net:27017/ParseAppServer?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin',
   cloud: __dirname + '/cloud/main.js',
   appId: APP_ID,
   masterKey: MASTER_KEY, //Add your master key here. Keep it secret!
